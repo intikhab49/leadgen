@@ -1,0 +1,41 @@
+{
+  "taxonomies": [
+    { "code": "2084P0800X", "label": "Psychiatry" },
+    { "code": "1041C0700X", "label": "Social Worker" },
+    { "code": "101YM0800X", "label": "Counselor" },
+    { "code": "103TC0700X", "label": "Psychologist" }
+  ],
+  "cities": [
+    { "city": "Dallas", "state": "TX" },
+    { "city": "Houston", "state": "TX" },
+    { "city": "Austin", "state": "TX" },
+    { "city": "San Antonio", "state": "TX" }
+  ],
+  "npi": {
+    "base_url": "https://npiregistry.cms.hhs.gov/api/",
+    "limit_per_request": 200,
+    "max_pages_per_query": 20,
+    "delay_seconds": 1.0,
+    "retries": 4,
+    "status_filter": "A",
+    "enumeration_types": ["NPI-1", "NPI-2"]
+  },
+  "search": {
+    "max_results_per_query": 5,
+    "delay_range": [3, 7],
+    "retries": 3,
+    "request_timeout": 12
+  },
+  "email": {
+    "timeout_seconds": 10,
+    "max_sub_pages": 3,
+    "delay_range": [1, 3],
+    "retries": 2
+  },
+  "user_agents": [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+  ]
+}
